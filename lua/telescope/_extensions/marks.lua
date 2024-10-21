@@ -122,7 +122,7 @@ return function(opts)
             sorter = conf.generic_sorter(opts),
             previewer = conf.grep_previewer(opts),
             attach_mappings = function(_, map)
-                map("i", "<c-d>", delete_harpoon_mark)
+                -- map("i", "<c-d>", delete_harpoon_mark) -- comment this out so I can use C-d for scrolling in preview
                 map("n", "<c-d>", delete_harpoon_mark)
 
                 map("i", "<c-p>", move_mark_up)
